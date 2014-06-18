@@ -12,11 +12,6 @@ Create an Heroku app:
 
     heroku create APP_NAME
 
-Add database for persistance:
-
-    heroku addons:add heroku-postgresql:dev
-    heroku config:set DATABASE_URL=<copy the newly created database url here>
-
 Configure the app by providing your broker url (RabbitMQ, Redis, what have you) and a password for logging into Flower:
 
     heroku config:set BROKER_URL=redis://...
